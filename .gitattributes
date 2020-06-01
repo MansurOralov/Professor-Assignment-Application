@@ -2,4 +2,4 @@
 * text=auto
 
 * linguist-vendored
-*.cs linguist-vendored=false
+*.aspx.cs linguist-vendored=false
