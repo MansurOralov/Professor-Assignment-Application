@@ -1,0 +1,22 @@
+USE [Prof_Availability]
+GO
+/****** Object:  StoredProcedure [dbo].[Masters]    Script Date: 4/8/2020 10:50:56 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		Mansur Oralov
+-- Create date:         Long ago
+-- Description:	        for Masters only
+-- =============================================
+ALTER PROCEDURE [dbo].[Masters] @code varchar(10) 
+	
+AS
+BEGIN
+	
+
+    -- Insert statements for procedure here
+	SELECT * from professor where CourseCode = @code AND Eductaion = 'Masters'
+END
+

@@ -1,0 +1,21 @@
+USE [Prof_Availability]
+GO
+/****** Object:  StoredProcedure [dbo].[PhD]    Script Date: 4/8/2020 10:52:11 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		Mansur
+-- Create date:         Not so long ago
+-- Description:	        for PhDs only
+-- =============================================
+ALTER PROCEDURE [dbo].[PhD]  @code varchar(10)
+	
+AS
+BEGIN
+  SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	SELECT * from dbo.professor  where courseCode = @code  AND Eductaion = 'PhD'
+END
